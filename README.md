@@ -1,4 +1,6 @@
-## About Scateboard
+> **Note:** This repository contains the core code of the Skateboard framework. If you want to build an application using Skateboard, visit the [Skateboard project repository](https://github.com/OneSheep/skateboard).
+
+## About Skateboard
 
 Minimalist PHP framework
 
@@ -10,16 +12,14 @@ Minimalist PHP framework
 - Template rendering with layout
 - Aborts and redirects
 
-
 ## Installation
 
 Install with Composer
 
 ```
-composer require scateboard/framework
+composer require skateboard/framework
 ```
-
 
 ## License
 
-`scateboard/framework` is released under the MIT public license. See the enclosed `LICENSE` for details.
+`skateboard/framework` is released under the MIT public license. See the enclosed `LICENSE` for details.

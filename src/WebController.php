@@ -6,7 +6,7 @@
  * @license     MIT public license
  */
 
-namespace Scateboard\Wheels;
+namespace Skateboard\Wheels;
 
 class WebController
 {

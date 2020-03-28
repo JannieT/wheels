@@ -1,5 +1,5 @@
 {
-  "name": "scateboard/framework",
+  "name": "skateboard/framework",
   "description": "Minimalist PHP framework",
   "type": "library",
   "license": "MIT",
@@ -15,7 +15,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Scateboard\\Wheels\\": "src",
+      "Skateboard\\Wheels\\": "src",
       "Test\\": "tests/"
     }
   }
