@@ -10,9 +10,15 @@ Minimalist PHP framework
 - Template rendering with layout
 - Aborts and redirects
 
-## Prerequisites/Requirements
 
-- PHP 7.1 or greater
+## Installation
+
+Install with Composer
+
+```
+composer require scateboard/framework
+```
+
 
 ## License
 
