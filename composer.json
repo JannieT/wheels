@@ -1,0 +1,21 @@
+{
+  "name": "scateboard/framework",
+  "description": "Minimalist PHP framework",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jannie Theunissen",
+      "email": "jannie@onesheep.org"
+    }
+  ],
+  "require": {
+    "bramus/router": "^1.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Scateboard\\Wheels\\": "src",
+      "Test\\": "tests/"
+    }
+  }
+}
