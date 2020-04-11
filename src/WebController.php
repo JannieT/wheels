@@ -91,6 +91,12 @@ class WebController
 
         $message = isset($messages[$code]) ? $messages[$code] : '';
         header("HTTP/1.1 $code $message");
+
+        if ($this->requestIsJson()) {
+            $this->json($message, $code);
+            exit;
+        }
+
         if (! empty($html)) {
             echo $html;
         }
