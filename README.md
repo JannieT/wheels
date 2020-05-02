@@ -96,7 +96,7 @@ PHP is already a templating language, so all we need in our views is a little se
 
 views/layout.php
 
-```html
+```php
 <!DOCTYPE html>
 <html>
   <head>
@@ -117,12 +117,11 @@ views/layout.php
 
 views/about.php
 
-```html
+```php
 <div>
   <h2>About</h2>
   <ul>
-    <?php foreach ($headers as $key =>
-    $value): ?>
+    <?php foreach ($headers as $key => $value): ?>
     <li><?= "$key:  $value" ?></li>
     <?php endforeach; ?>
   </ul>
