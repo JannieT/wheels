@@ -32,22 +32,22 @@ See the [router docs](https://github.com/bramus/router)
 ### Properties
 
 `viewPath` string  
-The file path to the views folder relative to the controller. Defualts to "../views"
+The file path to the views folder relative to the controller. Defaults to "../views"
 
 `layout` string  
-The file name and extension of a template layout inside your viewPath to wrap your views
-Defaults to "layout.php", so set this to null if you do not use a layout
+The file name and extension of a template layout inside your viewPath to wrap your views.  
+Defaults to "layout.php", so set this to `null` if you do not use a layout
 
 ### Methods
 
-`view($view, $data = [], $raw = [])`
+`view($view, $data = [], $raw = [])`  
 Render a view template with some data.
 
 - string \$view file name of the view in the viewPath folder such as 'about'
 - array \$data items that will be escaped and provided to the view
 - array \$raw safe items that will be rendered without escaping
 
-`json($output, $code = 200)`
+`json($output, $code = 200)`  
 Render a json response.
 
 - mixed \$output that will be json encoded
@@ -96,36 +96,36 @@ PHP is already a templating language, so all we need in our views is a little se
 
 views/layout.php
 
-```
+```html
 <!DOCTYPE html>
 <html>
-<head>
-	<title>My App</title>
-</head>
-<body>
-	<nav>
-		<ul>
-			<li><a href="/about">About</a></li>
-			...
-		</ul>
-	</nav>
+  <head>
+    <title>My App</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/about">About</a></li>
+        ...
+      </ul>
+    </nav>
 
     <?= $content; ?>
-
-</body>
+  </body>
 </html>
 ```
 
 views/about.php
 
-```
+```html
 <div>
-    <h2>About</h2>
-    <ul>
-    <?php foreach ($headers as $key => $value): ?>
-        <li><?= "$key:  $value" ?></li>
+  <h2>About</h2>
+  <ul>
+    <?php foreach ($headers as $key =>
+    $value): ?>
+    <li><?= "$key:  $value" ?></li>
     <?php endforeach; ?>
-    </ul>
+  </ul>
 </div>
 ```
 
