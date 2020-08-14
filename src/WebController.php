@@ -221,7 +221,7 @@ class WebController
     public function input($key)
     {
         if ($this->requestInput == null) {
-            $this->requestInput = $this->allRequestInputs();
+            $this->requestInput = $this->inputs();
         }
 
         return isset($this->requestInput[$key]) ? $this->requestInput[$key] : null;
@@ -232,7 +232,7 @@ class WebController
      *
      * @return array of key/value input pairs
      */
-    protected function allRequestInputs()
+    public function inputs()
     {
         if (! empty($_REQUEST)) {
             return $_REQUEST;

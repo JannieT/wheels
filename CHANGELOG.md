@@ -1,5 +1,10 @@
 # Changelog for `skateboard/framework`
 
+## 1.4.0 – 2020-08-14
+
+- Added ORM
+- Added inputs() method for controllers
+
 ## 1.3.0 – 2020-05-02
 
 - Added env file
