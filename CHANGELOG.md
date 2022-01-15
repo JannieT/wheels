@@ -1,5 +1,9 @@
 # Changelog for `skateboard/framework`
 
+## 1.4.1 – 2022-01-15
+
+- Enabled PHP 8
+
 ## 1.4.0 – 2020-08-14
 
 - Added ORM

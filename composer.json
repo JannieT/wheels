@@ -10,8 +10,8 @@
     }
   ],
   "require": {
-    "php": "^7.1",
-    "bramus/router": "^1.4",
+    "php": "^7.1|^8.0",
+    "bramus/router": "^1.6.1",
     "vlucas/phpdotenv": "^4.1"
   },
   "autoload": {
